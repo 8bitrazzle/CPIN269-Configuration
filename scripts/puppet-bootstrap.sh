@@ -14,5 +14,5 @@ fi
 
 /usr/bin/yum -y install puppet
 /usr/bin/rm -rf /etc/puppet
-/usr/bin/ln -s /root/Heimdall-Cluster-Configuration/puppet /etc/puppet
+/usr/bin/ln -s /root/CPIN269-Configuration/puppet /etc/puppet
 /usr/bin/puppet apply --logdest /var/log/puppet/puppet-apply-common.log /etc/puppet/manifests/common.pp

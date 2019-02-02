@@ -91,7 +91,5 @@ if ! shopt -q login_shell ; then # We're not a login shell
 fi
 # vim:ts=4:sw=4
 
-module load mpi/openmpi-x86_64
-
 PATH=${PATH}:/usr/sbin:/usr/site/lab/scripts:/var/log:/usr/site/lab/sbin:/usr/site/lab/bin:/usr/site/lab/scripts:/usr/site/lab/support_scripts
 

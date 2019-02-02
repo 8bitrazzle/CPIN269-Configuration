@@ -2,19 +2,17 @@ class common::packages {
 
     package {
 	'vim-enhanced':
-		ensure => present;
+		ensure  => present,
 	'net-tools':
-		ensure => present;
+		ensure  => present,
 	'git':
-		ensure => present;
+		ensure  => present,
 	'wget':
-		ensure => present;
+		ensure  => present,
 	'epel-release':
-		ensure => present;
+		ensure  => present,
 	'htop':
-		ensure => present,
-		require => Package['epel-release'];
-	'ipa-client':
-		ensure => present;
+		ensure  => present,
+		require => Package['epel-release'],
 	}
 }
