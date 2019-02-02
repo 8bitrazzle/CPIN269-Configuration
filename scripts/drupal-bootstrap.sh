@@ -11,5 +11,5 @@
 tar -zxvf drupal-8.6.7.tar.gz
 /usr/bin/mv drupal-8.6.7 /var/www/html/drupal
 /usr/bin/cp /var/www/html/drupal/sites/default/default.settings.php /var/www/html/drupal/sites/default/settings.php
-#/usr/bin/chown -R apache:apache /var/www/html/drupal/
-/usr/bin/rm -f ~/drupal*
+/usr/bin/chown -R apache:apache /var/www/html/drupal/
+/usr/bin/rm -rf ~/CPIN269-Configuration/scripts/drupal-8*
