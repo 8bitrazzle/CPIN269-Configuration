@@ -16,3 +16,4 @@ fi
 /usr/bin/rm -rf /etc/puppet
 /usr/bin/ln -s /root/CPIN269-Configuration/puppet /etc/puppet
 /usr/bin/puppet apply --logdest /var/log/puppet/puppet-apply-common.log /etc/puppet/manifests/common.pp
+/usr/bin/puppet apply --logdest /var/log/puppet/puppet-apply-drupal.log /etc/puppet/manifests/drupal.pp
