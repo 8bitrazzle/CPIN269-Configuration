@@ -1,5 +1,10 @@
 class drupal::config {
-    
+
+    file { "/var/www/html/drupal":
+	ensure  => directory,
+	owner   => "apache",
+	group   => "apache",
+	}    
     file { "/etc/httpd/conf/httpd.conf":
 	source  => "puppet:///modules/drupal/etc/httpd/conf/httpd.conf",
 	require => Class["drupal::packages"],
