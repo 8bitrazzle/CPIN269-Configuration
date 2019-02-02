@@ -1,1 +1,2 @@
-# CPIN269-Configuration
+# Heimdall-Cluster-Configuration
+Puppet config for new cluster
