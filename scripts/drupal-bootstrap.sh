@@ -6,6 +6,9 @@
 /usr/bin/yum -y install epel-release
 /usr/bin/rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm
 
+#Setting selinux to permissive so no reboot is required later
+setenforce Permissive
+
 #drupal basic setup
 /usr/bin/wget -c https://ftp.drupal.org/files/projects/drupal-8.6.7.tar.gz
 /usr/bin/mkdir -p /var/www/html
