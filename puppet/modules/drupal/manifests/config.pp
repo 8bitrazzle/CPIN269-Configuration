@@ -20,6 +20,7 @@ class drupal::config {
     service { "mariadb":
         ensure  => $run_services,
         enable  => true,
+        require => Class["drupal::packages"],
         }
     service { "firewalld":
         ensure  => stopped,
