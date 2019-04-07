@@ -5,7 +5,7 @@ RED='\033[0;31m'
 NC='\033[0m'
 
 /usr/bin/yum update -y
-/usr/bin/yum install -y creatrepo
+/usr/bin/yum install -y createrepo
 
 #creates custome yum repo for puppet 
 if [ ! -d /repository ]; then 
@@ -16,6 +16,13 @@ if [ ! -d /repository ]; then
 fi
 
 #installs and runs puppet for the first time
+if [ ! -f /etc/yum.repos.d/puppetlabs.repo ]; then
+        echo -e "${RED}WARNING: puppetlabs repo not present${NC}"
+        rpm -ivh http://yum.puppetlabs.com/puppetlabs-release-el-7.noarch.rpm
+elif [ -e /etc/yum.repos.d/puppetlabs.repo ]; then
+        echo -e "${GREEN}Puppetlabs repo present, moving on${NC}"
+fi
+
 /usr/bin/yum -y install puppet
 /usr/bin/rm -rf /etc/puppet
 /usr/bin/ln -s /root/CPIN269-Configuration/puppet /etc/puppet
