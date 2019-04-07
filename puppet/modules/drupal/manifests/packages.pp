@@ -3,6 +3,7 @@ class drupal::packages {
     package {
 	# a list of packeges goes here.
         [ "httpd",
+	  "drupal",
 	  "mariadb-server",
 	  "php70w",
 	  "php70w-opcache",
