@@ -1,0 +1,5 @@
+[customrepo]
+name=Custom Repository
+baseurl=file:///repository/
+enabled=1
+gpgcheck=0
