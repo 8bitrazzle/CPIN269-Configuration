@@ -20,6 +20,7 @@ esac
 /usr/bin/yum install -y createrepo
 
 #creates custome yum repo for puppet 
+#later on this should be its own server on the network {todolist}
 if [ ! -d /repository ]; then 
     /usr/bin/mkdir /repository
     /usr/bin/cp ~/CPIN269-Configuration/RPMs/* /repository
