@@ -19,7 +19,7 @@ esac
 /usr/bin/yum update -y
 /usr/bin/yum install -y createrepo
 
-#creates customeyum repo for puppet 
+#creates custom yum repo for puppet 
 #later on this should be its own server on the network {todolist}
 if [ ! -d /repository ]; then 
     /usr/bin/mkdir /repository
