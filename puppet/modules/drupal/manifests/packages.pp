@@ -6,6 +6,7 @@ class drupal::packages {
 	  "drupal",
 	  "mariadb-server",
 	  "php70w",
+	  "php70w-bcmath",
 	  "php70w-opcache",
 	  "php70w-mbstring",
 	  "php70w-gd",
