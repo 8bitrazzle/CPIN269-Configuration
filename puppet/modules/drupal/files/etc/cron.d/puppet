@@ -1,0 +1,2 @@
+@reboot root /usr/site/lab/sbin/run_puppet 2>/dev/null
+30 * * * * root /usr/site/lab/sbin/run_puppet 2>/dev/null
