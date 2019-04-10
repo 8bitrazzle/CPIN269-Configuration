@@ -1,11 +1,11 @@
 class drupal::config {
 
-#    file { "/var/www/html":
-#	ensure  => directory,
-#	owner   => "apache",
-#	group   => "apache",
-#	require => Class["drupal::packages"],
-#	}    
+    file {'/usr/site/lab/sbin/run_puppet':
+	ensure	=> present,
+	owner	=> 'root',
+	mode	=> '0550',
+	source	=> "puppet:///modules/drupal/usr/site/lab/sbin/run_puppet",
+	}
     file { "/etc/httpd/conf/httpd.conf":
 	source  => "puppet:///modules/drupal/etc/httpd/conf/httpd.conf",
 	require => Class["drupal::packages"],
